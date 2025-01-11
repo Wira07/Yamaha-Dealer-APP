@@ -3,8 +3,11 @@ package com.universitaskuningan.yamaha_dealer_app;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -57,7 +60,64 @@ public class MainActivity extends AppCompatActivity {
         binding.recyclerView.setAdapter(adapter);
 
         setupBottomNavigation();
+        setupSearch();
     }
+
+
+    // Tambahkan metode ini untuk mengatur fitur pencarian
+    private void setupSearch() {
+        // Tangani perubahan teks secara real-time
+        binding.searchInput.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                // Tidak diperlukan
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // Panggil filter saat teks berubah
+                filterData(s.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                // Tidak diperlukan
+            }
+        });
+
+        // Tangani klik tombol pencarian
+        binding.searchButton.setOnClickListener(v -> {
+            String query = binding.searchInput.getText().toString();
+            if (!query.isEmpty()) {
+                filterData(query);
+            } else {
+                Toast.makeText(this, "Masukkan kata kunci untuk mencari", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    // Tambahkan metode untuk memfilter data
+// Logika untuk memfilter data berdasarkan input pencarian
+    private void filterData(String query) {
+        ArrayList<ItemModel> filteredList = new ArrayList<>();
+
+        // Periksa setiap item apakah cocok dengan query
+        for (ItemModel item : data) {
+            if (item.getMotorType().toLowerCase().contains(query.toLowerCase())) {
+                filteredList.add(item);
+            }
+        }
+
+        // Update RecyclerView dengan hasil pencarian
+        if (filteredList.isEmpty()) {
+            Toast.makeText(this, "Tidak ada hasil ditemukan", Toast.LENGTH_SHORT).show();
+        }
+
+        // Set data baru ke adapter dan refresh RecyclerView
+        adapter = new AdapterRecycleView(filteredList);
+        binding.recyclerView.setAdapter(adapter);
+    }
+
 
     @SuppressLint("NonConstantResourceId")
     private void setupBottomNavigation() {
