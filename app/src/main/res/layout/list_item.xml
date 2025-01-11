@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/item_background"
+    android:layout_margin="4dp">
+
+    <!-- Motorcycle Image -->
+    <ImageView
+        android:id="@+id/motorImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_mxking"
+        android:contentDescription="Motor Image"
+        tools:ignore="HardcodedText" />
+
+    <!-- Motorcycle Type -->
+    <TextView
+        android:id="@+id/motorType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="MX KING 150 "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Yamaha-Dealer-APP</string>
+    <string name="logo">Logo</string>
+    <string name="welcome_to_yamaha_garage">Welcome Yamaha Garage</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register">Register</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="daftar">Daftar</string>
+    <string name="motor_image_desc">MX KING</string>
+    <string name="motor_nmax_desc">Yamaha NMAX 155\nSkuter Maxi Elegan untuk Semua Kebutuhan\nYamaha NMAX adalah pilihan ideal untuk kenyamanan berkendara jarak dekat maupun jauh. Dengan mesin Blue Core yang efisien dan desain premium, NMAX memberikan pengalaman berkendara yang mewah dan praktis.</string>
+    <string name="motor_aerox_desc">Yamaha Aerox 155\nSkuter Maxi Sporty yang Siap Balapan\nAerox hadir dengan tampilan aerodinamis dan mesin bertenaga besar, menjadikannya skuter sport yang unggul di kelasnya. Dibekali fitur modern seperti smart key system dan konektivitas smartphone, Aerox dirancang untuk gaya hidup aktif.</string>
+    <string name="motor_mio_desc">Yamaha Mio Series\nTeman Setia untuk Mobilitas Harian\nYamaha Mio adalah skuter kompak yang praktis dan irit, cocok untuk penggunaan harian. Dengan desain modern dan mudah dikendarai, Mio menjadi pilihan utama bagi pengendara muda yang aktif dan stylish.</string>
+    <string name="motor_mxking_desc">Yamaha MX King 150\nRajanya Bebek Sport\nYamaha MX King menawarkan kombinasi sempurna antara performa sporty dan kenyamanan harian. Dilengkapi mesin bertenaga dengan desain agresif, motor ini cocok untuk pengendara muda yang suka tampil beda di jalanan.</string>
+    <string name="motor_r25_desc">Yamaha R25\nMotor Sport Ringan dengan Jiwa Balap\nR25 mengusung desain DNA balap Yamaha dengan handling yang lincah dan performa mesin yang memukau. Motor ini adalah pilihan sempurna bagi pengendara yang ingin merasakan adrenalin di jalan raya maupun sirkuit.</string>
+    <string name="motor_xmax_desc">Yamaha XMAX 250\nKemewahan dalam Skuter Maxi Premium\nXMAX adalah skuter maxi dengan performa tinggi dan fitur canggih. Desain futuristik, mesin powerful, dan kenyamanan maksimal menjadikannya pilihan terbaik untuk petualangan jarak jauh dengan gaya.</string>
+    <string name="motor_r6_desc">Yamaha R6\nKecepatan Tanpa Batas di Lintasan Balap\nYamaha R6 adalah motor sport premium dengan performa luar biasa. Dengan mesin bertenaga dan aerodinamika unggul, R6 dirancang untuk pecinta kecepatan yang ingin menaklukkan lintasan balap.</string>
+    <string name="motor_rxking_desc">Yamaha RX-King\nSang Legenda Jalanan yang Tak Tergantikan\nRX-King adalah motor 2-tak legendaris yang dikenal dengan akselerasi cepat dan suara khas. Motor ini menjadi simbol kecepatan dan gaya di masanya, menjadikannya favorit para penggemar motor klasik.</string>
+    <string name="motor_yz_desc">Yamaha YZ Series\nSang Penakluk Medan Off-Road\nYamaha YZ Series adalah motor trail yang dirancang khusus untuk kompetisi motocross. Dengan suspensi canggih dan mesin bertenaga, YZ siap menaklukkan segala medan ekstrem.</string>
+    <string name="motor_xsr_desc">Yamaha XSR 155\nPerpaduan Gaya Klasik dan Teknologi Modern\nXSR menggabungkan desain retro klasik dengan teknologi canggih. Motor ini menawarkan pengalaman berkendara yang unik bagi mereka yang menginginkan tampilan vintage tanpa mengorbankan performa.</string>
+</resources>

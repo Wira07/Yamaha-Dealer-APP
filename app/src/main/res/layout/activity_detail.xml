@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Motorcycle Image with rounded corners -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/motorImage"
+                android:layout_width="240dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/motor_image_desc"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rx_king" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Motorcycle Name -->
+        <TextView
+            android:id="@+id/motorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="MX KING"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Description Label -->
+        <TextView
+            android:id="@+id/motorDescriptionLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Deskripsi:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Motorcycle Description -->
+        <TextView
+            android:id="@+id/motorDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="MX King 150 adalah motor bebek sport yang diproduksi oleh Yamaha, dirancang untuk memberikan performa tinggi dengan tampilan yang agresif dan dinamis. Dikenal sebagai salah satu motor bebek yang memiliki desain modern dan performa mesin yang tangguh, MX King 150 cocok digunakan untuk aktivitas sehari-hari maupun pengendara yang menyukai kecepatan dan ketangkasan di jalanan."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <!-- Specifications Label -->
+        <TextView
+            android:id="@+id/motorSpecificationsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Spesifikasi:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Motorcycle Specifications -->
+        <TextView
+            android:id="@+id/motorSpecifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="- Mesin: 4-tak, SOHC, 1 silinder\n"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Kapasitas Mesin: 150 cc\n- Tenaga Maksimum: 11,5 kW (15,5 hp) @ 8.500 rpm\n- Torsi Maksimum: 13,8 Nm @ 7.000 rpm\n- Sistem Pendingin: Pendingin cair (liquid-cooled)\n- Transmisi: 5 percepatan\n- Suspensi Depan: Teleskopik\n- Suspensi Belakang: Monoshock\n- Rem Depan: Cakram\n- Rem Belakang: Cakram\n- Panjang x Lebar x Tinggi: 1.975 mm x 670 mm x 1.070 mm\n- Berat: 115 kg\n- Tangki Bahan Bakar: 4,1 liter"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
