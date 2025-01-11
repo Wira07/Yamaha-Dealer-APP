@@ -9,6 +9,17 @@
     <string name="belum_punya_akun">Belum punya akun?</string>
     <string name="daftar">Daftar</string>
     <string name="motor_image_desc">MX KING</string>
+    <string name="motor_description">Detail deskripsi motor.</string>
+    <!-- Deskripsi Motor -->
+    <string name="motor_description_mxking">MX King 150 adalah motor bebek sport yang diproduksi oleh Yamaha, dirancang untuk memberikan performa tinggi dengan tampilan yang agresif dan dinamis...</string>
+    <string name="motor_description_nmax">Yamaha NMAX adalah skuter maxi elegan dengan performa mesin yang efisien, memberikan kenyamanan berkendara...</string>
+    <string name="motor_description_aerox">Yamaha Aerox 155 hadir dengan desain sporty dan fitur canggih...</string>
+
+    <!-- Spesifikasi Motor -->
+    <string name="motor_specifications_mxking">- Mesin: 4-tak, SOHC, 1 silinder\n- Kapasitas Mesin: 150 cc\n- Tenaga Maksimum: 11,5 kW...</string>
+    <string name="motor_specifications_nmax">- Mesin: 155 cc, VVA\n- Tenaga: 15,5 HP\n- Torsi: 14 Nm...</string>
+    <string name="motor_specifications_aerox">- Mesin: 155 cc, VVA\n- Tenaga: 15,6 HP\n- Torsi: 13,8 Nm...</string>
+    <string name="motor_specifications">- Mesin: 150cc\n- Tenaga: 15HP\n- Torsi: 13Nm</string>
     <string name="motor_nmax_desc">Yamaha NMAX 155\nSkuter Maxi Elegan untuk Semua Kebutuhan\nYamaha NMAX adalah pilihan ideal untuk kenyamanan berkendara jarak dekat maupun jauh. Dengan mesin Blue Core yang efisien dan desain premium, NMAX memberikan pengalaman berkendara yang mewah dan praktis.</string>
     <string name="motor_aerox_desc">Yamaha Aerox 155\nSkuter Maxi Sporty yang Siap Balapan\nAerox hadir dengan tampilan aerodinamis dan mesin bertenaga besar, menjadikannya skuter sport yang unggul di kelasnya. Dibekali fitur modern seperti smart key system dan konektivitas smartphone, Aerox dirancang untuk gaya hidup aktif.</string>
     <string name="motor_mio_desc">Yamaha Mio Series\nTeman Setia untuk Mobilitas Harian\nYamaha Mio adalah skuter kompak yang praktis dan irit, cocok untuk penggunaan harian. Dengan desain modern dan mudah dikendarai, Mio menjadi pilihan utama bagi pengendara muda yang aktif dan stylish.</string>

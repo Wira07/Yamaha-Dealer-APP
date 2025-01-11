@@ -3,12 +3,9 @@ package com.universitaskuningan.yamaha_dealer_app;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.universitaskuningan.yamaha_dealer_app.databinding.ListItemBinding;
-
 import java.util.ArrayList;
 
 public class AdapterRecycleView extends RecyclerView.Adapter<AdapterRecycleView.ViewHolder> {
@@ -18,7 +15,6 @@ public class AdapterRecycleView extends RecyclerView.Adapter<AdapterRecycleView.
         this.itemModels = itemModels;
     }
 
-    // ViewHolder Class menggunakan View Binding
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final ListItemBinding binding;
 
@@ -44,22 +40,25 @@ public class AdapterRecycleView extends RecyclerView.Adapter<AdapterRecycleView.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AdapterRecycleView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         ItemModel item = itemModels.get(position);
         holder.bind(item, currentItem -> {
+            // Mengirimkan data motor ke activity_detail
             Intent intent = new Intent(holder.itemView.getContext(), activity_detail.class);
             intent.putExtra("MOTOR_NAME", currentItem.getMotorType());
             intent.putExtra("MOTOR_IMAGE", currentItem.getMotorImage());
+            intent.putExtra("MOTOR_DESCRIPTION", Myitem.motorDescriptions[position]); // Deskripsi motor
+            intent.putExtra("MOTOR_SPECIFICATIONS", Myitem.motorSpecifications[position]); // Spesifikasi motor
             holder.itemView.getContext().startActivity(intent);
         });
     }
+
 
     @Override
     public int getItemCount() {
         return itemModels.size();
     }
 
-    // Listener untuk menangani klik item
     public interface ViewHolderClickListener {
         void onClick(ItemModel item);
     }

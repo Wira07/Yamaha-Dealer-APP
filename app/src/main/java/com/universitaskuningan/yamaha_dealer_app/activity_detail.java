@@ -18,14 +18,31 @@ public class activity_detail extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         // Mendapatkan data dari Intent
-        String name = getIntent().getStringExtra("MOTOR_NAME");
-        int image = getIntent().getIntExtra("MOTOR_IMAGE", 0);
+        String motorName = getIntent().getStringExtra("MOTOR_NAME");
+        int motorImage = getIntent().getIntExtra("MOTOR_IMAGE", 0);
+        String motorDescription = getIntent().getStringExtra("MOTOR_DESCRIPTION");
+        String motorSpecifications = getIntent().getStringExtra("MOTOR_SPECIFICATIONS");
 
-        // Menampilkan data
-        binding.motorName.setText(name);
-        binding.motorImage.setImageResource(image);
-        binding.motorDescription.setText("Detail deskripsi motor.");
-        binding.motorSpecifications.setText("- Mesin: 150cc\n- Tenaga: 15HP\n- Torsi: 13Nm");
+        // Menampilkan data motor
+        if (motorName != null) {
+            binding.motorName.setText(motorName); // Menampilkan nama motor
+        }
+
+        if (motorImage != 0) {
+            binding.motorImage.setImageResource(motorImage); // Menampilkan gambar motor
+        }
+
+        if (motorDescription != null) {
+            binding.motorDescription.setText(motorDescription); // Menampilkan deskripsi motor
+        } else {
+            binding.motorDescription.setText("Deskripsi tidak tersedia."); // Default deskripsi jika kosong
+        }
+
+        if (motorSpecifications != null) {
+            binding.motorSpecifications.setText(motorSpecifications); // Menampilkan spesifikasi motor
+        } else {
+            binding.motorSpecifications.setText("Spesifikasi tidak tersedia."); // Default spesifikasi jika kosong
+        }
     }
 
     @Override
